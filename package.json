@@ -10,6 +10,7 @@
     "appium-uiautomator2-driver": "^3.8.0"
   },
   "scripts": {
-    "start-emulator": "emulator -avd Pixel_8_API_34"
+    "start-emulator": "emulator -avd Pixel_4_API_34",
+    "test": "npx wdio run ./wdio.conf.js"
   }
 }
