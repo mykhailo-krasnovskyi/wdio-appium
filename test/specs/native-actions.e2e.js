@@ -6,7 +6,7 @@ describe('Native Actions', () => {
 
         beforeEach(async () => {
             //activate the app
-            driver.activateApp('io.appium.android.apis');
+            await driver.activateApp('io.appium.android.apis');
             // driver.execute('mobile: activateApp', {
             //     appId: 'io.appium.android.apis'
             // })
@@ -15,7 +15,7 @@ describe('Native Actions', () => {
 
         afterEach(async () => {
             //terminate the app
-            driver.terminateApp('io.appium.android.apis');
+            await driver.terminateApp('io.appium.android.apis');
             // driver.execute('mobile: terminateApp', {
             //     appId: 'io.appium.android.apis'
             // })

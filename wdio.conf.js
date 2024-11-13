@@ -57,7 +57,7 @@ export const config = {
         'appium:deviceName': 'Pixel 4 API 34',
         'appium:platformVersion': '14.0',
         'appium:automationName': 'UiAutomator2',
-        'appium:app': './app/ApiDemos-debug.apk',
+        'appium:app': './app/apk-prod.apk',
     }],
 
     //
