@@ -1,6 +1,6 @@
 export const selectBrandDropdownMenuLocation = {
     topY: 790,
-    bottomY: 1335,
+    bottomY: 1325,
     leftX: 105,
     rightX: 970,
 }
