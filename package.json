@@ -11,6 +11,6 @@
   },
   "scripts": {
     "start-emulator": "emulator -avd Pixel_4_API_34",
-    "test": "npx wdio run ./wdio.conf.js --spec garage.e2e.js"
+    "test": "npx wdio run ./wdio.conf.js"
   }
 }

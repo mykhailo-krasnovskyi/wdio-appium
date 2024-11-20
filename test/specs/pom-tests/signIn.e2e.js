@@ -50,7 +50,7 @@ describe('Log In tests', () => {
 
     });
 
-    it.only('Opening Registration popup', async () => {
+    it('Opening Registration popup', async () => {
         await SignInForm.clickRegistrationButton();
         await expect(SignUpForm.formTitle).toBeDisplayed();
 

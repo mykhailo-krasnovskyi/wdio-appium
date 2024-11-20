@@ -22,7 +22,7 @@ export const config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        './test/specs/**/*.js'
+        './test/specs/pom-tests/*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -54,8 +54,8 @@ export const config = {
         // capabilities for local Appium web tests on an Android Emulator
         platformName: 'Android',
         // browserName: 'Chrome',
-        'appium:deviceName': 'Pixel 4 API 34',
-        'appium:platformVersion': '14.0',
+        'appium:deviceName': 'HT7971A03650',
+        'appium:platformVersion': '11',
         'appium:automationName': 'UiAutomator2',
         'appium:app': './app/apk-prod.apk',
     }],

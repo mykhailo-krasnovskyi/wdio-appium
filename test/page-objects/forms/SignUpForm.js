@@ -1,6 +1,6 @@
 class SignUpForm {
     get formTitle() {
-        return $('//android.widget.TextView[@text="Register"]');
+        return $('android=new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text("Register"))');
     }
 }
 
