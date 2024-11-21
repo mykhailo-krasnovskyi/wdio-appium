@@ -1,10 +1,16 @@
 export async function selectMenuItemByIndex(index, itemsNumbers, dropdownLocation) {
     const { width: screenWidth, height: screenHeight } = await driver.getWindowRect();
 
-    const menuTopY = Math.floor(screenHeight * (dropdownLocation.topY / screenHeight));
-    const menuBottomY = Math.floor(screenHeight * (dropdownLocation.bottomY / screenHeight));
-    const menuLeftX = Math.floor(screenWidth * (dropdownLocation.leftX / screenWidth));
-    const menuRightX = Math.floor(screenWidth * (dropdownLocation.rightX / screenWidth));
+    const referenceWidth = 1080;
+    const referenceHeight = 2280;
+
+    const scaleX = screenWidth / referenceWidth;
+    const scaleY = screenHeight / referenceHeight;
+
+    const menuTopY = Math.floor(dropdownLocation.topY * scaleY);
+    const menuBottomY = Math.floor(dropdownLocation.bottomY * scaleY);
+    const menuLeftX = Math.floor(dropdownLocation.leftX * scaleX);
+    const menuRightX = Math.floor(dropdownLocation.rightX * scaleX);
 
     const menuItemHeight = Math.floor((menuBottomY - menuTopY) / itemsNumbers);
     const clickX = menuLeftX + Math.floor((menuRightX - menuLeftX) / 2);
@@ -17,5 +23,5 @@ export async function clickByCoordinates(x, y) {
         .down()
         .pause(100)
         .up()
-        .perform();
+        .perform()
 }
