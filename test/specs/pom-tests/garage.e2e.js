@@ -2,12 +2,14 @@ import GarageScreen from '../../page-objects/screens/GarageScreen';
 import HomeScreen from '../../page-objects/screens/HomeScreen';
 import SignInForm from '../../page-objects/forms/SignInForm';
 import { users } from '../../test-data/credentials';
-import { activateApp, closeApp } from '../../helpers/appStatesHelper';
+import { activateApp, closeApp, rotateDevice } from '../../helpers/appStatesHelper';
 
 describe('Garage tests', () => {
     before(async () => {
-        await driver.execute("browserstack_executor: {\"action\": \"adbShell\", \"arguments\": {\"command\" : \"wm set-fix-to-user-rotation enabled\" }}");
-        await driver.setOrientation('PORTRAIT');
+        if (isBrowserStack) {
+            await rotateDevice();
+        }
+
         await HomeScreen.openSignInForm();
         await SignInForm.setEmail(users.mainUser.email);
         await SignInForm.setPassword(users.mainUser.password);

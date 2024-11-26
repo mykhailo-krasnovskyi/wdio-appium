@@ -1,9 +1,17 @@
 "" 
 
-Tue Nov 26 2024 14:39:17:373 GMT+0200 (Jerusalem Standard Time) -- [WARNING] Detected instance of BrowserStackLocal Application, running in onlyAutomate mode to avoid port clash
-Tue Nov 26 2024 14:39:17:393 GMT+0200 (Jerusalem Standard Time) -- [WARNING] Skipping initialisation of configuration console because: port already in use by another Binary
-Tue Nov 26 2024 14:39:18:865 GMT+0200 (Jerusalem Standard Time) -- [SUCCESS] You can now access your local server(s) in our remote browser
+Tue Nov 26 2024 15:04:07:456 GMT+0200 (Jerusalem Standard Time) -- [WARNING] Detected instance of BrowserStackLocal Application, running in onlyAutomate mode to avoid port clash
+Tue Nov 26 2024 15:04:07:468 GMT+0200 (Jerusalem Standard Time) -- [WARNING] Skipping initialisation of configuration console because: port already in use by another Binary
+Tue Nov 26 2024 15:04:08:925 GMT+0200 (Jerusalem Standard Time) -- [SUCCESS] You can now access your local server(s) in our remote browser
 
-Tue Nov 26 2024 14:39:19:47 GMT+0200 (Jerusalem Standard Time) -- Press Ctrl-C to exit
+Tue Nov 26 2024 15:04:09:2 GMT+0200 (Jerusalem Standard Time) -- Press Ctrl-C to exit
+
+
+
+Tue Nov 26 2024 15:05:39:562 GMT+0200 (Jerusalem Standard Time) -- [WARNING] Detected instance of BrowserStackLocal Application, running in onlyAutomate mode to avoid port clash
+Tue Nov 26 2024 15:05:39:566 GMT+0200 (Jerusalem Standard Time) -- [WARNING] Skipping initialisation of configuration console because: port already in use by another Binary
+Tue Nov 26 2024 15:05:40:997 GMT+0200 (Jerusalem Standard Time) -- [SUCCESS] You can now access your local server(s) in our remote browser
+
+Tue Nov 26 2024 15:05:41:112 GMT+0200 (Jerusalem Standard Time) -- Press Ctrl-C to exit
 
 
