@@ -18,7 +18,7 @@ export const config = {
                 browserstackLocal: true
             },
         ]
-    ],
+    ], 
 
     // runner: 'local',
     // port: 4723,

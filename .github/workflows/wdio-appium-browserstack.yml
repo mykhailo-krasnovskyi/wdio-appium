@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - browserstack_android
   pull_request:
 
 jobs:
