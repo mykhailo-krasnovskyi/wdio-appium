@@ -6,6 +6,8 @@ import { activateApp, closeApp } from '../../helpers/appStatesHelper';
 
 describe('Garage tests', () => {
     before(async () => {
+        await driver.execute("browserstack_executor: {\"action\": \"adbShell\", \"arguments\": {\"command\" : \"wm set-fix-to-user-rotation enabled\" }}");
+        await driver.setOrientation('PORTRAIT');
         await HomeScreen.openSignInForm();
         await SignInForm.setEmail(users.mainUser.email);
         await SignInForm.setPassword(users.mainUser.password);
@@ -23,7 +25,7 @@ describe('Garage tests', () => {
         await closeApp('com.hillelAuto');
     })
 
-    it('Add a car - BMW 5', async () => {
+    it.only('Add a car - BMW 5', async () => {
         await GarageScreen.addCarByBrandAndModelIndexes(1, 1);
         await GarageScreen.verifyLastAddedCar('BMW', '5');
     });
