@@ -23,5 +23,5 @@ export async function clickByCoordinates(x, y) {
         .down()
         .pause(100)
         .up()
-        .perform()
+        .perform({ skipRelease: true });
 }
