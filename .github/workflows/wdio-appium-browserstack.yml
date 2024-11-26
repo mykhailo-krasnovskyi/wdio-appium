@@ -1,0 +1,32 @@
+name: Run WDIO + Appium Tests on BrowserStack
+
+on:
+  push:
+    branches:
+      - main
+      - browserstack_android
+  pull_request:
+
+jobs:
+  wdio-tests:
+    runs-on: ubuntu-latest
+
+    env:
+      BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
+      BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 20
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Run WDIO Tests
+      run: npm test
+
