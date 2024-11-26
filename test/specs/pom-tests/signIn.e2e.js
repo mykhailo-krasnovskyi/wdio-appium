@@ -28,7 +28,7 @@ describe('Log In tests', () => {
 
     });
 
-    it.only('Log in with incorrect credentials', async () => {
+    it('Log in with incorrect credentials', async () => {
         await SignInForm.setEmail(users.mainUser.email);
         await SignInForm.setPassword('testtesttest');
         await SignInForm.clickLoginButton();
