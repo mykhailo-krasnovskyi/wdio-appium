@@ -1,5 +1,5 @@
 /app
 /node_modules
 .env
-.local.log
+local.log
 /logs
