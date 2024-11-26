@@ -1,11 +1,13 @@
+import 'dotenv/config';
+
 export const config = {
     //
     // ====================
     // Runner Configuration
     // ====================
     // WebdriverIO supports running e2e tests as well as unit and component tests.
-    user: process.env.BROWSERSTACK_USERNAME || 'mishakrasnoskyi_At26Io',
-    key: process.env.BROWSERSTACK_ACCESS_KEY || 'y7E7y6zzjLEGjsSpfq7b',
+    user: process.env.BROWSERSTACK_USERNAME,
+    key: process.env.BROWSERSTACK_ACCESS_KEY,
     hostname: 'hub.browserstack.com',
     services: [
         [
