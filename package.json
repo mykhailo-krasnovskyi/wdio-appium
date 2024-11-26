@@ -13,5 +13,8 @@
   "scripts": {
     "start-emulator": "emulator -avd Pixel_4_API_34",
     "test": "npx wdio run ./wdio.conf.js --spec ./test/specs/pom-tests/signIn.e2e.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
   }
 }

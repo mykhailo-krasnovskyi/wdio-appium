@@ -1,2 +1,5 @@
 /app
 /node_modules
+.env
+local.log
+/logs
