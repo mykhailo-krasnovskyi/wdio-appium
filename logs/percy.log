@@ -1,3 +1,3 @@
-[90m2024-11-26T09:57:23.514Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Starting percy
-[90m2024-11-26T09:57:23.705Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Percy fetch token success : undefined
-[90m2024-11-26T09:57:23.706Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m Percy started successfully
+[90m2024-11-26T10:04:05.640Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Starting percy
+[90m2024-11-26T10:04:05.831Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Percy fetch token success : undefined
+[90m2024-11-26T10:04:05.831Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m Percy started successfully
