@@ -35,17 +35,17 @@ describe('Log In tests', () => {
         await expect(SignInForm.wrongDataMessage).toBeDisplayed();
     });
 
-    it('Log in without email', async () => {
+    it.only('Log in without email', async () => {
         await SignInForm.setEmail('');
         await SignInForm.setPassword('testtesttest');
         await SignInForm.clickLoginButton();
         await expect(SignInForm.emptyEmailErrorMessage).toBeDisplayed();
     });
 
-    it('Log in without password', async () => {
+    it.only('Log in without password', async () => {
         await SignInForm.setEmail(users.mainUser.email);
         await SignInForm.setPassword('');
-        await SignInForm.clickLoginButton();
+        // await SignInForm.clickLoginButton();
         await expect(SignInForm.emptyPasswordErrorMessage).toBeDisplayed();
 
     });

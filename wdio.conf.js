@@ -19,6 +19,11 @@ export const config = {
     ] : ['appium'],
 
     specs: ['./test/specs/pom-tests/*.js'],
+    reporters: ['spec', ['allure', {
+        outputDir: 'allure-results',
+        disableWebdriverStepsReporting: false,
+        disableWebdriverScreenshotsReporting: false,
+    }]],
 
     maxInstances: 1,
 
