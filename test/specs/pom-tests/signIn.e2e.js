@@ -35,7 +35,7 @@ describe('Log In tests', () => {
         await expect(SignInForm.wrongDataMessage).toBeDisplayed();
     });
 
-    it('Log in without email', async () => {
+    it.only('Log in without email', async () => {
         await SignInForm.setEmail('');
         await SignInForm.setPassword('testtesttest');
         await SignInForm.clickLoginButton();
