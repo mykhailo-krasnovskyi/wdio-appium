@@ -40,10 +40,10 @@ jobs:
         name: allure-report
         path: allure-report
 
-    deploy:
+  deploy:
     if: ${{ always() }}
     runs-on: ubuntu-latest
-    needs: test
+    needs: wdio-tests
     permissions:
       pages: write
       id-token: write
