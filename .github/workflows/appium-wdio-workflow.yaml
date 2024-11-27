@@ -3,7 +3,7 @@ name: Run WDIO + Appium Tests on BrowserStack
 on:
   push:
     branches:
-      - main
+
   pull_request:
 
 jobs:
